@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC - Corporal</title>
+    <link rel="icon" href="./imagens/imagem_titulo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="entrada_titulo" src="./imagens/Entrada_pagina_inicial.png" alt="Medidor Icon" />
+        <h1 class="titulario minha-secao" onclick="toggleFieldset()">Consulte sua Saúde!</h1>
+
+        <form id="imcForm" action="/calcular_imc" method="post">
+            <fieldset id="informacoesPaciente">
+                <legend>Informações sobre o Paciente</legend>
+                <div class="img_regua">
+                    <label for="altura">
+                        <img src="./imagens/regua.png" alt="Ícone de altura" class="icone-altura" width="48" height="38">
+                        Altura (m):
+                    </label>
+                    <input type="text" id="altura" name="altura" required placeholder="Exemplo: 1.60"><br>
+                </div>
+                <div class="img_balanca">
+                    <label for="peso">
+                        <img src="./imagens/balanca.png" alt="Ícone de altura" class="icone-balanca" width="48" height="38">
+                        Peso (Kg):
+                    </label>
+                    <input type="text" id="peso" name="peso" required placeholder="Exemplo: 45.830"><br>
+                </div>
+                <div class="button-container">
+                    <button type="submit">
+                        <img class="img_calculadora" src="./imagens/calculator_imc.svg" alt="Calculator Icon" />
+                        Calcular IMC
+                    </button>
+                    <button type="button" onclick="limparFormulario()">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 <a href="https://github.com/LuccasPoontes" target="_blank">Luccas Pontes</a>. Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleFieldset() {
+            var fieldset = document.getElementById('informacoesPaciente');
+            fieldset.style.display = (fieldset.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function limparFormulario() {
+            document.getElementById('imcForm').reset();
+        }
+    </script>
+</body>
+</html>
