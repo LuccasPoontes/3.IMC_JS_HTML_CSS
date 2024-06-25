@@ -309,11 +309,9 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para ma
   <a href="https://www.linkedin.com/in/luccas-pontes-faustino-50300b13a/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 </div>
 
-![Page views](https://visitor-badge.glitch.me/badge?page_id=LuccasPoontes.3.IMC_JS_HTML_CSS_new)
-
 <div align="center">
 <br><p align="center"><b>Você é meu visitante virtual nº</b></p>  
-<p align="center"><img align="center" src="https://profile-counter.glitch.me/LuccasPoontes_new/count.svg" /></p> 
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/LuccasPoontes_imc_repositorio/count.svg" /></p> 
 <br>
 </div>
 
