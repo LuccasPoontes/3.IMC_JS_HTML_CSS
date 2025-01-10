@@ -5,6 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     background-color: #ebe6ea;
 }
 
@@ -98,13 +100,14 @@ fieldset {
 }
 
 footer {
-    width: 900%;
+    width: 100%;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     background-color: #e19ff7;
     color: #fff;
     position: absolute;
     bottom: 0;
+    box-sizing: border-box; /* Inclui padding dentro da largura */
 }
 
 footer a {
