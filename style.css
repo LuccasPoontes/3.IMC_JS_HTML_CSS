@@ -4,10 +4,6 @@
     box-sizing: border-box; /* Inclui padding e border dentro do tamanho 09/01/2025*/
 }
 
-body * {
-    outline: 1px solid red; /* Adiciona contornos em todos os elementos */
-}
-
 body {
     display: flex;
     flex-direction: column;
